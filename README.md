@@ -7,7 +7,11 @@ For this assignment, you will write a small Python program to compare image hist
 - Save a CSV which has one column for the filename and three columns showing the filenames of the closest images in descending order
 
 ## 2. Methods 
-Something here - I'm sure yet
+This repository contains two scripts to find similarity between images
+```color_histogram_comparison.py``` extracts histograms and calcutes distance scores based these. It is a quick and easy way to get results, however it only takes colors into account, which can yield surprising results 
+
+```k_nearest_neighbors``` uses a convolutional neural network, VGG16 and k-nearest neighbors, to find similarity. This approach is slower but perhaps also more like humans judge images to be similar
+
 
 ## 3.1 Usage ```color_histogram_comparison.py```
 To run the code you should:
