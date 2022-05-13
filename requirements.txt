@@ -1,4 +1,4 @@
-Import the following libraries to run ```color_histogram_comparison.py```:
+Import the following libraries to run color_histogram_comparison.py:
 - os
 - cv2
 - pandas
@@ -6,7 +6,7 @@ Import the following libraries to run ```color_histogram_comparison.py```:
 - re
 - argparse
 
-Import the following libraries to run ```k_nearest_neighbors.py```:
+Import the following libraries to run k_nearest_neighbors.py:
 - os
 - tensorflow
 - tensorflow.keras.applications.vgg16 import (preprocess_input, VGG16)
