@@ -1,15 +1,8 @@
-# IMPORTANT: update these packages when I upload to GitHub
+# import libraries
 import os
-#import sys
 import cv2
-#import numpy as np
 import pandas as pd
-#from utils.imutils import jimshow
-#from utils.imutils import jimshow_channel
 import matplotlib.pyplot as plt
-#import matplotlib.image as mpimg
-#from utils.imutils import jimshow
-#from utils.imutils import jimshow_channel
 import re
 import argparse
 
