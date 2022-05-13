@@ -117,7 +117,7 @@ def save_images_csv(similar, joined_paths, image, similar_images):
     axarr[1,0].text(0.5, 0.5, f"Distance:{similar_images[1]}", fontsize=7, ha="center")
     axarr[1,1].text(0.5, 0.5, f"Distance:{similar_images[2]}", fontsize=7, ha="center")
     # create an outpath
-    outpath = os.path.join("out", "similar_images.jpg")
+    outpath = os.path.join("out", "color_hist_similar_images.jpg")
     # save the figure
     f.savefig(outpath)
     
@@ -128,7 +128,7 @@ def save_images_csv(similar, joined_paths, image, similar_images):
     # convert the dictionary to a data frame
     dframe = pd.DataFrame(data)
     # create another outpath
-    outpath2 = os.path.join("out", "similar_images.csv")
+    outpath2 = os.path.join("out", "color_hist_similar_images.csv")
     # and save the data frame as a csv
     dframe.to_csv(outpath2, encoding = "utf-8")
     
