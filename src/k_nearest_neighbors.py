@@ -1,45 +1,25 @@
-# import libraries - UPDATE THESE PACKAGES!
+# import libraries
 import os
-import sys
+import re
 
 # tf tools
 import tensorflow as tf
 
 # image processsing
-from tensorflow.keras.preprocessing.image import (load_img,
-                                                  img_to_array,
-                                                  ImageDataGenerator)
+from tensorflow.keras.preprocessing.image import (load_img, img_to_array)
+                                                  
 # VGG16 model
-from tensorflow.keras.applications.vgg16 import (preprocess_input,
-                                                 decode_predictions,
-                                                 VGG16)
-# cifar10 data - 32x32
-from tensorflow.keras.datasets import cifar10
+from tensorflow.keras.applications.vgg16 import (preprocess_input, VGG16)
 
-# layers
-from tensorflow.keras.layers import (Flatten, 
-                                     Dense, 
-                                     Dropout, 
-                                     BatchNormalization)
-# generic model object
-from tensorflow.keras.models import Model
-
-# optimizers
-from tensorflow.keras.optimizers.schedules import ExponentialDecay
-from tensorflow.keras.optimizers import SGD
-
-#scikit-learn
-from sklearn.preprocessing import LabelBinarizer
-from sklearn.metrics import classification_report
+# scikit learn
 from sklearn.neighbors import NearestNeighbors
 
-# for plotting
 import numpy as np
 import pandas as pd
 from numpy.linalg import norm
 import matplotlib.pyplot as plt   
 import matplotlib.image as mpimg
-import re
+
 import argparse
 
 # feature extraction function
