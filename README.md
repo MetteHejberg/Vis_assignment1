@@ -9,7 +9,7 @@ For this assignment, you will write a small Python program to compare image hist
 ## 2. Methods 
 This repository contains two scripts that find similarity between images
 
-```color_histogram_comparison.py``` extracts histograms and calcutes distance scores based these. It is a quick and easy way to get results, however it only takes colors into account, which can yield surprising results 
+```color_histogram_comparison.py``` extracts histograms and calcutes distance scores based these. It is a quick and easy way to get results, however it only takes colors into account, which can yield surprising results compared to how human judge similarity between images.
 
 ```k_nearest_neighbors``` uses a convolutional neural network, VGG16 and k-nearest neighbors, to find similarity. This approach is slower but perhaps also more like humans judge images to be similar
 
