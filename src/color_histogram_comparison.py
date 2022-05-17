@@ -9,7 +9,7 @@ import argparse
 # create a function that loads all images 
 def load_image_paths():
     # set a directory path
-    directory_path = os.path.join("..", "CDS-VIS", "flowers")
+    directory_path = os.path.join("in", "flowers")
     # get the file names
     filenames = os.listdir(directory_path) 
     # create an empty list
@@ -33,7 +33,7 @@ def load_image_paths():
 # create a function that extracts histograms from a single, user-defined image 
 def hist_norm(image):
     # get the image
-    img = os.path.join("..", "CDS-VIS", "flowers", image)
+    img = os.path.join("in", "flowers", image)
     # extract the histogram
     hist = cv2.calcHist([cv2.imread(img)],
                          [0,1,2],  
@@ -101,7 +101,7 @@ def save_images_csv(similar, joined_paths, image, similar_images):
             # append to the list
             final_images.append(rgb_image)
     # do the same for the user-defined image
-    rgb_target = cv2.imread(os.path.join("..", "CDS-VIS", "flowers", image))
+    rgb_target = cv2.imread(os.path.join("in", "flowers", image))
     rgb_target = cv2.cvtColor(rgb_target, cv2.COLOR_BGR2RGB)
     
     # let's plot the images
