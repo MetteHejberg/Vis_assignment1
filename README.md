@@ -9,7 +9,7 @@ For this assignment, you will write a small Python program to compare image hist
 ## 2. Methods 
 This repository contains two scripts that find similarity between images
 
-```color_histogram_comparison.py``` uses Open-CV to normalize images and extract their histograms. It also uses Open-CV to calcute distance scores based the histograms. It then finds the most similar images through the lowest distance scores. It lastly saves a 2x2 matrix wit the target image and the three most similar images with their distances scores. This is a quick and easy way to get results, however it only takes colors into account, which can yield surprising results compared to how human judge similarity between images.
+```color_histogram_comparison.py``` uses Open-CV to normalize images and extract their histograms. It also uses Open-CV to calcute distance scores based the histograms. It then finds the most similar images through the lowest distance scores. It lastly saves a 2x2 matrix with the target image and the three most similar images with their distances scores. This is a quick and easy way to get results, however it only takes colors into account, which can yield surprising results compared to how human judge similarity between images.
 
 ```k_nearest_neighbors``` uses a convolutional neural network to find similarity. The script extract features from the images using vgg16, passes the these features through k-nearest neighbors that returns distances scores and indices of the images. The most similar images are then found through the indices and plotted in a 2x2 matrix with the target image and the distance scores. This approach is slower but perhaps also more like humans judge images to be similar. 
 
