@@ -13,6 +13,7 @@ This repository contains two scripts that find similarity between images
 
 ```k_nearest_neighbors``` uses a convolutional neural network to find similarity. The script extract features from the images using vgg16, passes the these features through k-nearest neighbors that returns distances scores and indices of the images. The most similar images are then found through the indices and plotted in a 2x2 matrix with the target image and the distance scores. This approach is slower but perhaps also more like humans judge images to be similar. 
 
+Get the data here: https://www.robots.ox.ac.uk/~vgg/data/flowers/17/index.html
 
 ## 3.1 Usage ```color_histogram_comparison.py```
 To run the code you should:
