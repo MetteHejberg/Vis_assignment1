@@ -54,7 +54,7 @@ def mdl():
 # load the directory and create a list of its contents 
 def load_paths(model):
     # set a directory path
-    directory_path = os.path.join("..", "CDS-VIS", "flowers")
+    directory_path = os.path.join("in", "flowers")
     # list the contents of the directory in order
     filenames = os.listdir(directory_path)
     # create an empty list
@@ -90,7 +90,7 @@ def knn(image, feature_list, model):
                                  algorithm = "brute",
                                  metric = "cosine").fit(feature_list) # fit our features to out k-nearest neighbors algorithm
     # extract features from the user-defined image
-    user_image = extract_features(os.path.join("..", "CDS-VIS", "flowers", image), model)
+    user_image = extract_features(os.path.join("in", "flowers", image), model)
     # finds the closest images and their indices
     distances, indices = neighbors.kneighbors([user_image])
     # create an empty list
@@ -105,7 +105,7 @@ def save_images_csv(image, joined_paths, idxs, distances):
     # create a  2x2 matrix for the images 
     f, ax = plt.subplots(2,2)
     # arrange the images in the matrix
-    ax[0,0].imshow(mpimg.imread(os.path.join("..", "CDS-VIS", "flowers", image)))
+    ax[0,0].imshow(mpimg.imread(os.path.join("in", "flowers", image)))
     ax[0,1].imshow(mpimg.imread(joined_paths[idxs[0]]))
     ax[1,0].imshow(mpimg.imread(joined_paths[idxs[1]]))
     ax[1,1].imshow(mpimg.imread(joined_paths[idxs[2]]))
