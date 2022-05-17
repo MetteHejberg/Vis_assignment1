@@ -1,4 +1,6 @@
 ## 1. Assignment 1 - Image search
+Link to repository: https://github.com/MetteHejberg/Vis_assignment1
+
 For this assignment, you will write a small Python program to compare image histograms quantitively using Open-CV and the other image processing tools you've already encountered. Your script should do the following:
 - Take a user-defined image from the folder
 - Calculate the "distance" between the colour histogram of that image and all of the others.
