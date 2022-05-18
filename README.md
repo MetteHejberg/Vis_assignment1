@@ -36,6 +36,6 @@ To run the code you should:
   - The outputs in ```out``` were created with ```python src/color_histogram_comparison.py -i "image_0003.jpg"```
 
 ## 4. Discussion of Results 
-Using the same user-defined image in both scripts makes it clear that k-nearest neighbors captures something closer to how humans judge images to be similar. The color histogram comparison was quite successfull on ```image_0005.jpg``` and less successfull on for examples ```image_0003.jpg```. k-nearest neightbors finds images of the same flower in very similar contexts and is even able to ignore the slightly different backgrounds
+Using the same user-defined image in both scripts makes it clear that k-nearest neighbors captures something closer to how humans judge images to be similar. For the target image that produced the results in ```out```, the programs perform equally well, however in general it seems that ```k_nearest_neighbors.py``` works best.
 
 
