@@ -114,7 +114,7 @@ def save_images_csv(image, joined_paths, idxs, distances):
     ax[1,0].text(0.5, 0.5, f"Distance:{distances[0][2]}", fontsize=7, ha="center")
     ax[1,1].text(0.5, 0.5, f"Distance:{distances[0][3]}", fontsize=7, ha="center")
     # save the figure
-    f.savefig(os.path.join("out", "'k_nearest_similar_images.jpg"))
+    f.savefig(os.path.join("out", "k_nearest_similar_images.jpg"))
     
     # create list of the most similar images from joined_paths
     similar = list((joined_paths[idxs[0]], joined_paths[idxs[1]], joined_paths[idxs[2]]))
