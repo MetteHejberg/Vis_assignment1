@@ -24,7 +24,7 @@ To run the code you should:
 - Install the packages mentioned in ```requirements.txt```
 - Set your current working directory to the level above ```src```
 - Write in the command line: ```python src/color_histogram_comparison.py -i "image_name.jpg"``` 
-  - The outputs in ```out``` were created with ```python src/color_histogram_comparison.py -i "image_0005jpg"``` __fix because 005 looked so much better__
+  - The outputs in ```out``` were created with ```python src/color_histogram_comparison.py -i "image_0005jpg"```
 
 ## 3.2 Usage ```k_nearest_neighbors.py```
 To run the code you should:
@@ -33,7 +33,7 @@ To run the code you should:
 - Install the packages mentioned in ```requirements.txt```
 - Set your current working directory to the level above ```src```
 - Write in the command line: ```python src/k_nearest_neighbors.py -i "image_name.jpg"```
-  - The outputs in ```out``` were created with ```python src/color_histogram_comparison.py -i "image_0003.jpg"```
+  - The outputs in ```out``` were created with ```python src/color_histogram_comparison.py -i "image_0005.jpg"```
 
 ## 4. Discussion of Results 
 Using the same user-defined image in both scripts makes it clear that k-nearest neighbors captures something closer to how humans judge images to be similar. For the target image that produced the results in ```out```, the programs perform equally well, however in general it seems that ```k_nearest_neighbors.py``` works best.
