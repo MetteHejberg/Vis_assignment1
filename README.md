@@ -24,7 +24,7 @@ To run the code you should:
 - Install the packages mentioned in ```requirements.txt```
 - Set your current working directory to the level above ```src```
 - Write in the command line: ```python src/color_histogram_comparison.py -i "image_name.jpg"``` 
-  - The outputs in ```out``` were created with ```python src/color_histogram_comparison.py -i "image_0003.jpg"```
+  - The outputs in ```out``` were created with ```python src/color_histogram_comparison.py -i "image_0005jpg"``` __fix because 005 looked so much better__
 
 ## 3.2 Usage ```k_nearest_neighbors.py```
 To run the code you should:
